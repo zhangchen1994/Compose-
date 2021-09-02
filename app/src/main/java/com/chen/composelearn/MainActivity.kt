@@ -38,11 +38,7 @@ class MainActivity : ComponentActivity() {
                         }
                     },
                 ) {
-                    Column(modifier = Modifier.padding(all = 80.dp)) {
-                        BarChartMinMax(dataPoints = listOf(3, 5, 7),
-                            maxText = { Text(text = "MAX") },
-                            minText = { Text(text = "MIN") })
-                    }
+                    ContactsList()
                 }
             }
         }
